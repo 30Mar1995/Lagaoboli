@@ -13,6 +13,12 @@
 		72A999692455B4AC00AA49A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A999672455B4AC00AA49A4 /* Main.storyboard */; };
 		72A9996B2455B4AE00AA49A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A9996A2455B4AE00AA49A4 /* Assets.xcassets */; };
 		72A9996E2455B4AE00AA49A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A9996C2455B4AE00AA49A4 /* LaunchScreen.storyboard */; };
+		72A9997C2455B4EB00AA49A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A9997B2455B4EB00AA49A4 /* AppDelegate.swift */; };
+		72A9997E2455B4EB00AA49A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A9997D2455B4EB00AA49A4 /* SceneDelegate.swift */; };
+		72A999802455B4EB00AA49A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A9997F2455B4EB00AA49A4 /* ViewController.swift */; };
+		72A999832455B4EB00AA49A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A999812455B4EB00AA49A4 /* Main.storyboard */; };
+		72A999882455B4EC00AA49A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A999862455B4EC00AA49A4 /* LaunchScreen.storyboard */; };
+		72A9998E2455B56300AA49A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A9996A2455B4AE00AA49A4 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +30,24 @@
 		72A9996A2455B4AE00AA49A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72A9996D2455B4AE00AA49A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72A9996F2455B4AE00AA49A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72A999792455B4EB00AA49A4 /* LagaoboliAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LagaoboliAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A9997B2455B4EB00AA49A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72A9997D2455B4EB00AA49A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		72A9997F2455B4EB00AA49A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72A999822455B4EB00AA49A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72A999872455B4EC00AA49A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		72A999892455B4EC00AA49A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		72A9995B2455B4AC00AA49A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A999762455B4EB00AA49A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,7 +60,9 @@
 		72A999552455B4AC00AA49A4 = {
 			isa = PBXGroup;
 			children = (
+				72A9998D2455B53900AA49A4 /* Shared */,
 				72A999602455B4AC00AA49A4 /* Lagaoboli */,
+				72A9997A2455B4EB00AA49A4 /* LagaoboliAdmin */,
 				72A9995F2455B4AC00AA49A4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				72A9995E2455B4AC00AA49A4 /* Lagaoboli.app */,
+				72A999792455B4EB00AA49A4 /* LagaoboliAdmin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,11 +83,31 @@
 				72A999632455B4AC00AA49A4 /* SceneDelegate.swift */,
 				72A999652455B4AC00AA49A4 /* ViewController.swift */,
 				72A999672455B4AC00AA49A4 /* Main.storyboard */,
-				72A9996A2455B4AE00AA49A4 /* Assets.xcassets */,
 				72A9996C2455B4AE00AA49A4 /* LaunchScreen.storyboard */,
 				72A9996F2455B4AE00AA49A4 /* Info.plist */,
 			);
 			path = Lagaoboli;
+			sourceTree = "<group>";
+		};
+		72A9997A2455B4EB00AA49A4 /* LagaoboliAdmin */ = {
+			isa = PBXGroup;
+			children = (
+				72A9997B2455B4EB00AA49A4 /* AppDelegate.swift */,
+				72A9997D2455B4EB00AA49A4 /* SceneDelegate.swift */,
+				72A9997F2455B4EB00AA49A4 /* ViewController.swift */,
+				72A999812455B4EB00AA49A4 /* Main.storyboard */,
+				72A999862455B4EC00AA49A4 /* LaunchScreen.storyboard */,
+				72A999892455B4EC00AA49A4 /* Info.plist */,
+			);
+			path = LagaoboliAdmin;
+			sourceTree = "<group>";
+		};
+		72A9998D2455B53900AA49A4 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				72A9996A2455B4AE00AA49A4 /* Assets.xcassets */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +130,23 @@
 			productReference = 72A9995E2455B4AC00AA49A4 /* Lagaoboli.app */;
 			productType = "com.apple.product-type.application";
 		};
+		72A999782455B4EB00AA49A4 /* LagaoboliAdmin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72A9998A2455B4EC00AA49A4 /* Build configuration list for PBXNativeTarget "LagaoboliAdmin" */;
+			buildPhases = (
+				72A999752455B4EB00AA49A4 /* Sources */,
+				72A999762455B4EB00AA49A4 /* Frameworks */,
+				72A999772455B4EB00AA49A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LagaoboliAdmin;
+			productName = LagaoboliAdmin;
+			productReference = 72A999792455B4EB00AA49A4 /* LagaoboliAdmin.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +158,9 @@
 				ORGANIZATIONNAME = Pooja;
 				TargetAttributes = {
 					72A9995D2455B4AC00AA49A4 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					72A999782455B4EB00AA49A4 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -116,6 +179,7 @@
 			projectRoot = "";
 			targets = (
 				72A9995D2455B4AC00AA49A4 /* Lagaoboli */,
+				72A999782455B4EB00AA49A4 /* LagaoboliAdmin */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +195,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		72A999772455B4EB00AA49A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A999882455B4EC00AA49A4 /* LaunchScreen.storyboard in Resources */,
+				72A9998E2455B56300AA49A4 /* Assets.xcassets in Resources */,
+				72A999832455B4EB00AA49A4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,6 +215,16 @@
 				72A999662455B4AC00AA49A4 /* ViewController.swift in Sources */,
 				72A999622455B4AC00AA49A4 /* AppDelegate.swift in Sources */,
 				72A999642455B4AC00AA49A4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A999752455B4EB00AA49A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A999802455B4EB00AA49A4 /* ViewController.swift in Sources */,
+				72A9997C2455B4EB00AA49A4 /* AppDelegate.swift in Sources */,
+				72A9997E2455B4EB00AA49A4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +243,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				72A9996D2455B4AE00AA49A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		72A999812455B4EB00AA49A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A999822455B4EB00AA49A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		72A999862455B4EC00AA49A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A999872455B4EC00AA49A4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -314,6 +414,40 @@
 			};
 			name = Release;
 		};
+		72A9998B2455B4EC00AA49A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LagaoboliAdmin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Pooja.LagaoboliAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72A9998C2455B4EC00AA49A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LagaoboliAdmin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Pooja.LagaoboliAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -331,6 +465,15 @@
 			buildConfigurations = (
 				72A999732455B4AE00AA49A4 /* Debug */,
 				72A999742455B4AE00AA49A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72A9998A2455B4EC00AA49A4 /* Build configuration list for PBXNativeTarget "LagaoboliAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72A9998B2455B4EC00AA49A4 /* Debug */,
+				72A9998C2455B4EC00AA49A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
